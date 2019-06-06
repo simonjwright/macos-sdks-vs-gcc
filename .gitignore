@@ -1,0 +1,6 @@
+*.ali
+*.o
+*~
+
+a.out
+hello
