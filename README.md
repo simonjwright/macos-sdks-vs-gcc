@@ -52,7 +52,7 @@ With Big Sur, Apple have carried this approach through to system libraries; ther
 ```
  ld: library not found for -lSystem
 ```
-and the fix is to include `-L$SDK/usr/lib` in the linker command. This is in the latest version of `gcc10-specs` (commit 244ecb2).
+and the fix is to include `-L$SDK/usr/lib` in the linker command. This is in the latest version of `gcc10-specs` (commit cb87934).
 
 You can use this without installing by e.g. for Ada
 ```
