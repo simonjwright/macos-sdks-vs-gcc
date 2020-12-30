@@ -42,6 +42,9 @@ An alternative (without installing Xcode) would be to copy `ce2109-specs` to `$p
 
 The changes here are very similar to those for GNAT CE 2019, but read `ce2020-specs` for `ce2019-specs`. 
 
+**However!** while these changes are fine for Mojave and Catalina, they don't work on Big Sur. You'll have to use the unmodified GNAT CE.  
+This seems to be because of an interaction between the extreme hairiness of the GCC specs system and Big Sur's `ld` (Apple's `ld` has always had more options than you could shake a stick at).
+
 ### FSF GCC ###
 
 A similar problem arises with FSF GCC, builds provided at [Sourceforge](https://sourceforge.net/projects/gnuada/files/GNAT_GCC%20Mac%20OS%20X/). So far I've been building on El Capitan, which has none of these problems, but this approach will have to stop when the built compiler won't run on new macOS versions. A problem for another day! but, for now, the built compiler needs to be taught to look in the SDK.
